@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "JC",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk-9.0.4\\bin\\javac.exe"
+            },
+            "args": [
+                "${file}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "JR",
+            "command": "java",
+            "windows": {
+                "command": "C:\\Program Files\\Java\\jdk-9.0.4\\bin\\java.exe"
+            },
+            "args": [
+                "${fileBasenameNoExtension}"
+            ]
+        }
+    ]
+}
