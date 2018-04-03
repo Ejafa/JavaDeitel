@@ -1,10 +1,21 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        squareOfAstherisks(10, '+');
+        int squareSize;
+        char fillCharacter;
+
+        Scanner myScanner = new Scanner(System.in);
+        System.out.printf("Enter square size: ");
+        squareSize = myScanner.nextInt();
+        System.out.printf("Enter fill character: ");
+        fillCharacter = myScanner.next().charAt(0);
+
+        squareOfAstherisks(squareSize, fillCharacter);
     }
 
     public static void squareOfAstherisks(int side, char fillCharacter) {
